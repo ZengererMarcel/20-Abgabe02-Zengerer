@@ -13,7 +13,7 @@ class StringQueueTest {
 
     @BeforeEach
     void setup() {
-        queue = new StringQueue(5);
+        queue = new StringQueue(6);
     }
 
     @Test
@@ -46,6 +46,17 @@ class StringQueueTest {
 
         queue.offer("Test");
         assertEquals(queue.element(), "Test");
+
+    }
+
+    @Test
+    @DisplayName("Testing poll StringQueue")
+    public void testPollStringQueue() {
+
+        assertEquals(queue.poll(), null);
+
+        queue.offer("Test");
+        assertEquals(queue.poll(), "Test");
 
     }
 

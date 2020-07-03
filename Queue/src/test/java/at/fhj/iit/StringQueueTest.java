@@ -24,6 +24,7 @@ class StringQueueTest {
         assertEquals(queue.offer("Test3"), true);
         assertEquals(queue.offer("Test4"), true);
         assertEquals(queue.offer("Test5"), true);
+        assertEquals(queue.offer("Test6"), true);
         assertEquals(queue.offer("Test6"), false);
     }
 
@@ -58,6 +59,17 @@ class StringQueueTest {
         queue.offer("Test");
         assertEquals(queue.poll(), "Test");
 
+    }
+
+    @Test
+    @DisplayName("Testing remove StringQueue")
+    public void testRemoveStringQueue() {
+        assertThrows(NoSuchElementException.class, () -> {
+            queue.remove();
+        });
+
+        queue.offer("Test");
+        assertEquals(queue.remove(), "Test");
     }
 
 }

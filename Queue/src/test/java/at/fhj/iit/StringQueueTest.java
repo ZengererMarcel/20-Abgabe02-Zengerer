@@ -24,4 +24,14 @@ class StringQueueTest {
         assertEquals(queue.offer("Test5"), true);
         assertEquals(queue.offer("Test6"), false);
     }
+
+    @Test
+    @DisplayName("Testing peek StringQueue")
+    public void testPeekStringQueue() {
+        assertEquals(queue.peek(), null);
+
+        queue.offer("Test");
+        assertEquals(queue.peek(), "Test");
+
+    }
 }

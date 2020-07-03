@@ -5,6 +5,6 @@ Grundsätzlich handelt es sich bei diesem Projekt um eine Queue, in der Daten vo
 ## Tasklist
 
 - [x] Projekt (Queue) einfügen
-- [] Testcases für StringQueue hinzufügen
-- [] Fehler im Projekt finden und korrigieren
+- [x] Testcases für StringQueue hinzufügen
+- [x] Fehler im Projekt finden und korrigieren
 - [] JavaDoc hinzufügen

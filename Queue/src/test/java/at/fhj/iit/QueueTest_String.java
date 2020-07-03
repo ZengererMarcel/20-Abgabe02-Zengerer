@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
-public class QueueTest_StringTest {
+public class QueueTest_String {
     Queue queue;
 
     /**

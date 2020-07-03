@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 /**
  * Class represents a Generic Queue
  */
-public class Queue<T>{
+public class Queue<T> {
     /**
      * List for the values if the queue
      */
@@ -32,7 +32,7 @@ public class Queue<T>{
      * If the addition is successful, the method returns true else false.
      *
      * @param obj String object for the queue
-     * @return  a boolean, true if the object was added else false
+     * @return a boolean, true if the object was added else false
      */
     public boolean offer(T obj) {
         if (elements.size() < maxSize)
@@ -47,7 +47,7 @@ public class Queue<T>{
      * Returns the head (first) element and also deletes it. That is, we cannot get it again.
      * If no element exists (when queue is empty), the method returns null.
      *
-     * @return  returns the head of the queue
+     * @return returns the head of the queue
      */
     public T poll() {
         T element = peek();

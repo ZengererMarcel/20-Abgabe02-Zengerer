@@ -6,6 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.NoSuchElementException;
+
 class StringQueueTest {
     StringQueue queue;
 
@@ -34,4 +36,17 @@ class StringQueueTest {
         assertEquals(queue.peek(), "Test");
 
     }
+
+    @Test
+    @DisplayName("Testing element StringQueue")
+    public void testElementStringQueue() {
+        assertThrows(NoSuchElementException.class, () -> {
+            queue.element();
+        });
+
+        queue.offer("Test");
+        assertEquals(queue.element(), "Test");
+
+    }
+
 }

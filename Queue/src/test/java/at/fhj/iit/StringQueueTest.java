@@ -3,10 +3,20 @@ package at.fhj.iit;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class StringQueueTest {
+    StringQueue queue;
 
-   // TODO Write your own tests
+    @BeforeEach
+    void setup() {
+        queue = new StringQueue(5);
+    }
 
+    @Test
+    @DisplayName("Testing offer StringQueue")
+    public void testOfferStringQueue() {
+        assertEquals(queue.offer("Test"), true);
+    }
 }

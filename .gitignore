@@ -4,3 +4,5 @@ Queue/.idea/
 *.iml
 
 Queue/target/
+
+.idea/

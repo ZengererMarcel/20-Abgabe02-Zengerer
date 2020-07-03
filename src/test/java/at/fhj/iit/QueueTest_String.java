@@ -9,22 +9,22 @@ import org.junit.jupiter.api.Test;
 import java.util.NoSuchElementException;
 
 /**
- * Class which tests the methods of StringQueue
+ * Class which tests the methods of Queue
  */
-class StringQueueTest {
-    StringQueue queue;
+public class QueueTest_String {
+    Queue queue;
 
     /**
      * Init a StringQueue for each test
      */
     @BeforeEach
     void setup() {
-        queue = new StringQueue(6);
+        queue = new Queue(6);
     }
 
     @Test
-    @DisplayName("Testing offer StringQueue")
-    public void testOfferStringQueue() {
+    @DisplayName("Testing offer Queue")
+    public void testOfferQueue() {
         assertEquals(queue.offer("Test"), true);
         assertEquals(queue.offer("Test2"), true);
         assertEquals(queue.offer("Test3"), true);
@@ -35,8 +35,8 @@ class StringQueueTest {
     }
 
     @Test
-    @DisplayName("Testing peek StringQueue")
-    public void testPeekStringQueue() {
+    @DisplayName("Testing peek Queue")
+    public void testPeekQueue() {
         assertEquals(queue.peek(), null);
 
         queue.offer("Test");
@@ -45,8 +45,8 @@ class StringQueueTest {
     }
 
     @Test
-    @DisplayName("Testing element StringQueue")
-    public void testElementStringQueue() {
+    @DisplayName("Testing element Queue")
+    public void testElementQueue() {
         assertThrows(NoSuchElementException.class, () -> {
             queue.element();
         });
@@ -57,8 +57,8 @@ class StringQueueTest {
     }
 
     @Test
-    @DisplayName("Testing poll StringQueue")
-    public void testPollStringQueue() {
+    @DisplayName("Testing poll Queue")
+    public void testPollQueue() {
 
         assertEquals(queue.poll(), null);
 
@@ -68,8 +68,8 @@ class StringQueueTest {
     }
 
     @Test
-    @DisplayName("Testing remove StringQueue")
-    public void testRemoveStringQueue() {
+    @DisplayName("Testing remove Queue")
+    public void testRemoveQueue() {
         assertThrows(NoSuchElementException.class, () -> {
             queue.remove();
         });
@@ -77,5 +77,6 @@ class StringQueueTest {
         queue.offer("Test");
         assertEquals(queue.remove(), "Test");
     }
+
 
 }

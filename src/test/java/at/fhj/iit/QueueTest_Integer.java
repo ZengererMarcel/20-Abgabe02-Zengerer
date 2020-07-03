@@ -1,17 +1,15 @@
 package at.fhj.iit;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
-/**
- * Class which tests the methods of Queue
- */
-public class QueueTest_String {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+public class QueueTest_Integer {
     Queue queue;
 
     /**
@@ -25,13 +23,13 @@ public class QueueTest_String {
     @Test
     @DisplayName("Testing offer Queue")
     public void testOfferQueue() {
-        assertEquals(queue.offer("Test"), true);
-        assertEquals(queue.offer("Test2"), true);
-        assertEquals(queue.offer("Test3"), true);
-        assertEquals(queue.offer("Test4"), true);
-        assertEquals(queue.offer("Test5"), true);
-        assertEquals(queue.offer("Test6"), true);
-        assertEquals(queue.offer("Test7"), false);
+        assertEquals(queue.offer(1), true);
+        assertEquals(queue.offer(2), true);
+        assertEquals(queue.offer(3), true);
+        assertEquals(queue.offer(4), true);
+        assertEquals(queue.offer(5), true);
+        assertEquals(queue.offer(6), true);
+        assertEquals(queue.offer(7), false);
     }
 
     @Test
@@ -39,8 +37,8 @@ public class QueueTest_String {
     public void testPeekQueue() {
         assertEquals(queue.peek(), null);
 
-        queue.offer("Test");
-        assertEquals(queue.peek(), "Test");
+        queue.offer(1);
+        assertEquals(queue.peek(), 1);
 
     }
 
@@ -51,8 +49,8 @@ public class QueueTest_String {
             queue.element();
         });
 
-        queue.offer("Test");
-        assertEquals(queue.element(), "Test");
+        queue.offer(1);
+        assertEquals(queue.element(), 1);
 
     }
 
@@ -62,8 +60,8 @@ public class QueueTest_String {
 
         assertEquals(queue.poll(), null);
 
-        queue.offer("Test");
-        assertEquals(queue.poll(), "Test");
+        queue.offer(1);
+        assertEquals(queue.poll(), 1);
 
     }
 
@@ -74,8 +72,8 @@ public class QueueTest_String {
             queue.remove();
         });
 
-        queue.offer("Test");
-        assertEquals(queue.remove(), "Test");
+        queue.offer(1);
+        assertEquals(queue.remove(), 1);
     }
 
 

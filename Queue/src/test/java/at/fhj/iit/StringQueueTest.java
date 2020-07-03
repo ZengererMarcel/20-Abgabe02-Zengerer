@@ -18,5 +18,10 @@ class StringQueueTest {
     @DisplayName("Testing offer StringQueue")
     public void testOfferStringQueue() {
         assertEquals(queue.offer("Test"), true);
+        assertEquals(queue.offer("Test2"), true);
+        assertEquals(queue.offer("Test3"), true);
+        assertEquals(queue.offer("Test4"), true);
+        assertEquals(queue.offer("Test5"), true);
+        assertEquals(queue.offer("Test6"), false);
     }
 }

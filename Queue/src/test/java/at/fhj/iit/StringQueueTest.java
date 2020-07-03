@@ -8,9 +8,15 @@ import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Class which tests the methods of StringQueue
+ */
 class StringQueueTest {
     StringQueue queue;
 
+    /**
+     * Init a StringQueue for each test
+     */
     @BeforeEach
     void setup() {
         queue = new StringQueue(6);

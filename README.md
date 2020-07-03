@@ -8,5 +8,6 @@ Grundsätzlich handelt es sich bei diesem Projekt um eine Queue, in der Daten vo
 - [x] Testcases für StringQueue hinzufügen
 - [x] Fehler im Projekt finden und korrigieren
 - [x] JavaDoc hinzufügen
-- [] Queue Klasse hinzufügen die Generic ist
-- [] Testcases für Queue hinzufügen (Generic Queue, mit der Klasse String testen)
+- [x] Queue Klasse hinzufügen die Generic ist
+- [x] Testcases für Queue hinzufügen (Generic Queue, mit der Klasse String testen)
+- [] MavenSite Dokumentation

@@ -11,3 +11,4 @@ Grundsätzlich handelt es sich bei diesem Projekt um eine Queue, in der Daten vo
 - [x] Queue Klasse hinzufügen die Generic ist
 - [x] Testcases für Queue hinzufügen (Generic Queue, mit der Klasse String testen)
 - [X] MavenSite Dokumentation
+- [] LabReport erstellen

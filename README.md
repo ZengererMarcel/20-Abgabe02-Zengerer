@@ -11,4 +11,12 @@ Grundsätzlich handelt es sich bei diesem Projekt um eine Queue, in der Daten vo
 - [x] Queue Klasse hinzufügen die Generic ist
 - [x] Testcases für Queue hinzufügen (Generic Queue, mit der Klasse String testen)
 - [X] MavenSite Dokumentation
-- [] LabReport erstellen
+- [x] LabReport erstellen
+
+##Fehler
+
+- Im StringQueue Konstruktor wurde die falsche Variable benutzt, statt der globalen variable maxSize wurde die lokale variable maxize benutzt
+- In der poll Methode wurde statt auf ungleichheit zu prüfen auf gleichheit geprüft
+- In der remove Methode war die Zuweisung element=" " wodurch das element durch " " ersetzt wurde.
+
+

@@ -13,9 +13,9 @@ Grundsätzlich handelt es sich bei diesem Projekt um eine Queue, in der Daten vo
 - [X] MavenSite Dokumentation
 - [x] LabReport erstellen
 
-##Fehler
+## Fehler
 
-- Im StringQueue Konstruktor wurde die falsche Variable benutzt, statt der globalen variable maxSize wurde die lokale variable maxize benutzt
+- Im StringQueue Konstruktor wurde die falsche Variable benutzt, statt der globalen Variable maxSize wurde die lokale Variable maxize benutzt
 - In der poll Methode wurde statt auf ungleichheit zu prüfen auf gleichheit geprüft
 - In der remove Methode war die Zuweisung element=" " wodurch das element durch " " ersetzt wurde.
 
